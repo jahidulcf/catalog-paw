@@ -1,0 +1,218 @@
+[
+    {
+        "name": "Carrot",
+        "quantity": "10 kg"
+    },
+    {
+        "name": "Potato",
+        "quantity": "25 kg"
+    },
+    {
+        "name": "Broccoli",
+        "quantity": "15 kg"
+    },
+    {
+        "name": "Spinach",
+        "quantity": "8 kg"
+    },
+    {
+        "name": "Tomato",
+        "quantity": "20 kg"
+    },
+    {
+        "name": "Cucumber",
+        "quantity": "12 kg"
+    },
+    {
+        "name": "Onion",
+        "quantity": "30 kg"
+    },
+    {
+        "name": "Garlic",
+        "quantity": "5 kg"
+    },
+    {
+        "name": "Lettuce",
+        "quantity": "10 kg"
+    },
+    {
+        "name": "Cauliflower",
+        "quantity": "18 kg"
+    },
+    {
+        "name": "Green Beans",
+        "quantity": "14 kg"
+    },
+    {
+        "name": "Peas",
+        "quantity": "7 kg"
+    },
+    {
+        "name": "Bell Pepper",
+        "quantity": "22 kg"
+    },
+    {
+        "name": "Cabbage",
+        "quantity": "16 kg"
+    },
+    {
+        "name": "Zucchini",
+        "quantity": "13 kg"
+    },
+    {
+        "name": "Radish",
+        "quantity": "9 kg"
+    },
+    {
+        "name": "Sweet Corn",
+        "quantity": "20 kg"
+    },
+    {
+        "name": "Eggplant",
+        "quantity": "11 kg"
+    },
+    {
+        "name": "Pumpkin",
+        "quantity": "28 kg"
+    },
+    {
+        "name": "Asparagus",
+        "quantity": "6 kg"
+    },
+    {
+        "name": "Leeks",
+        "quantity": "8 kg"
+    },
+    {
+        "name": "Chard",
+        "quantity": "5 kg"
+    },
+    {
+        "name": "Kale",
+        "quantity": "12 kg"
+    },
+    {
+        "name": "Brussels Sprouts",
+        "quantity": "17 kg"
+    },
+    {
+        "name": "Beets",
+        "quantity": "19 kg"
+    },
+    {
+        "name": "Artichokes",
+        "quantity": "4 kg"
+    },
+    {
+        "name": "Chili Pepper",
+        "quantity": "3 kg"
+    },
+    {
+        "name": "Celery",
+        "quantity": "9 kg"
+    },
+    {
+        "name": "Fennel",
+        "quantity": "7 kg"
+    },
+    {
+        "name": "Sweet Potato",
+        "quantity": "20 kg"
+    },
+    {
+        "name": "Parsnip",
+        "quantity": "8 kg"
+    },
+    {
+        "name": "Squash",
+        "quantity": "15 kg"
+    },
+    {
+        "name": "Okra",
+        "quantity": "12 kg"
+    },
+    {
+        "name": "Mushrooms",
+        "quantity": "10 kg"
+    },
+    {
+        "name": "Shallots",
+        "quantity": "6 kg"
+    },
+    {
+        "name": "Bok Choy",
+        "quantity": "9 kg"
+    },
+    {
+        "name": "Collard Greens",
+        "quantity": "7 kg"
+    },
+    {
+        "name": "Arugula",
+        "quantity": "5 kg"
+    },
+    {
+        "name": "Chives",
+        "quantity": "3 kg"
+    },
+    {
+        "name": "Mangel-Wurzels",
+        "quantity": "4 kg"
+    },
+    {
+        "name": "Kohlrabi",
+        "quantity": "10 kg"
+    },
+    {
+        "name": "Mustard Greens",
+        "quantity": "6 kg"
+    },
+    {
+        "name": "Taro",
+        "quantity": "14 kg"
+    },
+    {
+        "name": "Yam",
+        "quantity": "17 kg"
+    },
+    {
+        "name": "Celeriac",
+        "quantity": "5 kg"
+    },
+    {
+        "name": "Chicory",
+        "quantity": "7 kg"
+    },
+    {
+        "name": "Endive",
+        "quantity": "3 kg"
+    },
+    {
+        "name": "Radicchio",
+        "quantity": "4 kg"
+    },
+    {
+        "name": "Watercress",
+        "quantity": "2 kg"
+    },
+    {
+        "name": "Napa Cabbage",
+        "quantity": "8 kg"
+    },
+    {
+        "name": "Chinese Cabbage",
+        "quantity": "6 kg"
+    },
+    {
+        "name": "Taro Root",
+        "quantity": "15 kg"
+    },
+    {
+        "name": "Bamboo Shoots",
+        "quantity": "10 kg"
+    },
+    {
+        "name": "Lotus Root",
+        "quantity": "5 kg"
+    }
+]

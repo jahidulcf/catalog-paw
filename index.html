@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Catalogue App</title>
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#48B898">
+    <!-- Materialize CSS link -->
+    <link href="css/materialize.min.css" rel="stylesheet">
+    <!-- Custom styles link -->
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <h6>Catalogue app</h6>
+
+        <form id="orderForm">
+            <!-- Delivery date field -->
+            <div class="input-field">
+                <label for="date-picker">Delivery Date</label>
+                <input type="text" class="datepicker" id="date-picker" placeholder="Select delivery date">
+            </div>
+
+            <!-- Product input field -->
+            <div id="suggestionBox">
+                <label for="product">Products</label>
+                <!-- Materialize textarea class -->
+                <textarea id="product" class="materialize-textarea" placeholder="Type a product name..."></textarea>
+                <!-- Suggestions list -->
+                <ul class="suggestions" id="suggestions"></ul>
+            </div>
+
+            <!-- Copy button -->
+            <button type="button" id="copy" class="waves-effect waves-light btn">Copy</button>
+        </form>
+    </div>
+
+    <!-- Toast container -->
+    <div id="toast-container"></div>
+
+    <!-- Materialize JS link -->
+    <script src="js/materialize.min.js"></script>
+
+    <!-- Custom script for handling functionality -->
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
