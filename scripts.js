@@ -64,7 +64,7 @@ function handleSuggestions() {
 
     if (matches.length > 0) {
         suggestions.innerHTML = matches
-            .map(item => `<li role="option"><span>${item.name}</span><span>${item.quantity}</span></li>`)
+            .map(item => `<li role="option"><span>${item.name}&nbsp;</span><span>${item.quantity}</span></li>`)
             .join("");
         suggestions.style.display = "block";
         suggestions.setAttribute("aria-hidden", "false");
