@@ -42,27 +42,18 @@ document.addEventListener("DOMContentLoaded", () => {
     /** Date Picker Initialization */
     flatpickr(elements.dateInput, {
         dateFormat: "Y-m-d",
+        altInput: true,
+        altFormat: "d M, l",
+        disableMobile: "true",
         defaultDate: getTomorrow(),
         minDate: getTomorrow(),
-        maxDate: new Date().setMonth(new Date().getMonth() + 3),
-        onChange: (selectedDates) => updateFormattedDate(selectedDates[0]),
-        onReady: () => updateFormattedDate(getTomorrow()),
+        maxDate: new Date().setMonth(new Date().getMonth() + 3)
     });
 
     function getTomorrow() {
         const tomorrow = new Date();
         tomorrow.setDate(tomorrow.getDate() + 1);
         return tomorrow;
-    }
-
-    function updateFormattedDate(date) {
-        elements.dateInput.value = formatDate(date);
-    }
-
-    function formatDate(date) {
-        return `${date.getDate()} ${date.toLocaleString("default", {
-            month: "short",
-        })}, ${date.toLocaleString("default", { weekday: "long" })}`;
     }
 
     /** Product Management */
