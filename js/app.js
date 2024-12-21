@@ -118,7 +118,7 @@ document.addEventListener("DOMContentLoaded", () => {
     function toggleTextareaResize() {
         const currentHeight = parseInt(
             window.getComputedStyle(elements.textarea).height,
-            10
+            20
         );
         if (currentHeight < parseInt(CONSTANTS.maxHeight)) {
             elements.textarea.style.height = CONSTANTS.maxHeight;
