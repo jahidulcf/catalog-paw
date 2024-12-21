@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const CONSTANTS = {
         defaultHeight: "144px",
-        maxHeight: "1000px",
+        maxHeight: "800px",
         debounceDelay: 300,
     };
 
