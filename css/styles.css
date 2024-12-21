@@ -3,3 +3,10 @@
     transition: height 0.3s ease;
     resize: none;
 }
+
+/* CSS to prevent the native mobile date picker from showing */
+input[type="text"].flatpickr-input {
+    -webkit-appearance: none;  /* For iOS Safari */
+    -moz-appearance: none;     /* For Firefox on mobile */
+    appearance: none;          /* For other browsers */
+}
