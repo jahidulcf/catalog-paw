@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const CONSTANTS = {
         defaultHeight: "144px",
-        maxHeight: "2000px",
+        maxHeight: "1000px",
         debounceDelay: 300,
     };
 
@@ -118,7 +118,7 @@ document.addEventListener("DOMContentLoaded", () => {
     function toggleTextareaResize() {
         const currentHeight = parseInt(
             window.getComputedStyle(elements.textarea).height,
-            20
+            10
         );
         if (currentHeight < parseInt(CONSTANTS.maxHeight)) {
             elements.textarea.style.height = CONSTANTS.maxHeight;
