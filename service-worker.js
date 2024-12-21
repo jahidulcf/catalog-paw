@@ -7,8 +7,7 @@ const ASSETS = [
     '/css/styles.css',
     '/js/materialize.min.js',
     '/js/scripts.js',
-    '/icons/icon-192x192.png',
-    '/icons/icon-512x512.png'
+    '/icons/price-tag-icon.svg',
 ];
 
 self.addEventListener('install', event => {
