@@ -143,12 +143,12 @@ copyBtn.addEventListener('click', () => {
     const boldDate = `*${formattedDate}*`;
     const message = "I have an order to be delivered on " + boldDate + "\n" + textarea.value + "\n\nThank you!";
     navigator.clipboard.writeText(message).then(() => {
-    copyBtn.textContent = 'Copied!';
-    setTimeout(() => {
-        copyBtn.textContent = 'Copy';
-    }, 2000);
+        copyBtn.textContent = 'Copied!';
+        setTimeout(() => {
+            copyBtn.textContent = 'Copy';
+        }, 2000);
     }).catch(err => {
-    console.error('Failed to copy text: ', err);
+        console.error('Failed to copy text: ', err);
     });
 });
 
@@ -157,12 +157,12 @@ const defaultHeight = textarea.style.height;
 
 resizeBtn.addEventListener('click', () => {
     if (isResized) {
-    textarea.style.height = defaultHeight;
-    resizeBtn.innerHTML = '⇲';
+        textarea.style.height = defaultHeight;
+        resizeBtn.innerHTML = '⇲';
     } else {
-    textarea.style.height = 'auto';
-    textarea.style.height = textarea.scrollHeight + 'px';
-    resizeBtn.innerHTML = '⇱';
+        textarea.style.height = 'auto';
+        textarea.style.height = textarea.scrollHeight + 'px';
+        resizeBtn.innerHTML = '⇱';
     }
     isResized = !isResized;
 });
