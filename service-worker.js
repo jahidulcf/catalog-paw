@@ -3,10 +3,8 @@ const ASSETS = [
     '/',
     '/index.html',
     '/manifest.json',
-    '/css/materialize.min.css',
     '/css/styles.css',
-    '/js/materialize.min.js',
-    '/js/scripts.js',
+    '/js/app.js',
     '/icons/price-tag-icon.svg',
 ];
 
