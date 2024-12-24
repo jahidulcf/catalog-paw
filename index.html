@@ -2,92 +2,58 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Smart Catalog</title>
-    <meta name="theme-color" content="#FFF">
+    <meta theme-color="#ffffff">
     <base href="/catalog-paw/">
-    <link href="css/styles.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+    <link href="https://ai-public.creatie.ai/gen_page/tailwind-custom-v2.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
     <link rel="manifest" href="manifest.json">
 </head>
 
-<body class="bg-gray-50 min-h-screen p-4">
-    <div class="max-w-md mx-auto">
-        <!-- Main View (Product Selector) -->
-        <div id="main-view">
-            <!-- Header with Action Button -->
-            <div class="flex justify-between items-center mb-6">
-                <div class="text-xl font-medium text-gray-800">Smart Catalog</div>
-                <button id="catalog-button"
-                    class="border text-slate-600 bg-slate-200 font-medium py-2 px-4 rounded-md flex items-center hover:bg-opacity-90">
-                    <span class="material-icons">sell</span>
-                    <span>Products</span>
-                </button>
-            </div>
-
-            <!-- Date Selection -->
-            <div class="mb-6">
-                <label for="delivery-date" class="block text-sm font-medium text-gray-700 mb-2">Delivery Date</label>
-                <input type="text" id="delivery-date" placeholder="Select Delivery Date"
-                    class="w-full px-3 py-2 border border-gray-300 rounded-lg shadow-sm focus:ring focus:ring-blue-300 cursor-pointer" />
-            </div>
-
-            <!-- Product Input -->
-            <div class="relative mb-6">
-                <label for="product-input" class="block text-sm font-medium text-gray-700 mb-2">Products</label>
-                <textarea id="product-input" placeholder="Start typing to search products..."
-                    class="w-full h-36 px-3 py-2 border border-gray-300 rounded-lg shadow-sm focus:ring focus:ring-blue-300 resize-none"></textarea>
-                <button id="resize-button"
-                    class="absolute bottom-3 right-2 bg-gray-200 text-gray-600 px-2 py-1 rounded-md text-sm hover:bg-gray-300">⇲</button>
-            </div>
-
-            <!-- Copy Button -->
-            <button id="copy-btn"
-                class="copy-btn border text-slate-600 w-full bg-slate-200 font-medium py-3 px-4 rounded-md flex items-center justify-center hover:bg-opacity-90">
-                <span class="copy-text">Copy</span>
-            </button>
-
-            <!-- Suggestions -->
-            <div id="suggestions" class="relative bg-white border border-gray-200 shadow-lg rounded-lg mt-1 w-full">
+<body class="min-h-screen">
+    <div class="px-4 py-4">
+        <div class="flex items-center mb-4">
+            <h1 class="w-full">Product Management</h1>
+            <button id="fetchProductsBtn" class="border px-4 py-2 rounded-lg flex items-center space-x-3 text-sm hover:border-gray-300 transition-colors">
+                <i id="fetchIcon" class="fas fa-cloud-download"></i>
+                <span>Sync</span>
+        </div>
+        <div class="mb-4">
+            <label for="delivery-date" class="block text-sm font-medium text-gray-700">Delivery Date</label>
+            <input type="date" id="delivery-date" name="delivery-date"
+                class="mt-1 block w-full p-2 border border-gray-200 rounded-lg text-sm focus:border-custom focus:ring-1 focus:ring-custom"
+                min="" max="" value="">
+        </div>
+        <div class="relative mb-4">
+            <textarea id="product-input"
+                class="w-full h-32 p-3 border border-gray-200 rounded-lg text-sm focus:border-custom focus:ring-1 focus:ring-custom"
+                placeholder="Enter product (e.g. Apple 2 kg)"></textarea>
+                
+                <div class="absolute bottom-3 right-2 flex justify-end space-x-4">
+                    <button id="copy"
+                        class="bg-gray-200 text-gray-600 px-2 py-1 rounded-md text-sm hover:bg-gray-300">Copy</button>
+                    <button id="resize-button"
+                        class="bg-gray-200 text-gray-600 px-4 py-1 rounded-md text-sm hover:bg-gray-300">⇲</button>
+                </div>
+            <div id="suggestions"
+                class="hidden absolute w-full bg-white border border-gray-200 rounded-lg mt-1 max-h-48 overflow-y-auto z-10">
             </div>
         </div>
 
-        <!-- Catalog View (Hidden by default) -->
-        <div id="catalog-view" class="hidden">
-            <div class="flex justify-between items-center mb-6">
-                <button id="back-button" class="text-gray-800">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7">
-                        </path>
-                    </svg>
-                </button>
-                <div class="text-xl font-medium text-gray-800">Catalog</div>
-                <button id="save-button"
-                    class="border text-slate-600 bg-slate-200 font-medium py-2 px-4 rounded-md flex items-center hover:bg-opacity-90">
-                    <span class="material-icons">save</span>
-                    <span>Save</span>
-                </button>
-            </div>
-
-            <!-- Edit Product Section -->
-            <div class="mb-6">
-                <div class="relative mb-6">
-                    <input id="new-product"
-                        class="block w-full p-4 border border-gray-300 rounded-lg shadow-sm focus:ring focus:ring-blue-300"
-                        placeholder="Enter product and quantity (e.g., 'Banana 2kg')" required />
-                    <button id="add-product"
-                        class="absolute end-2.5 bottom-2.5 bg-slate-200 text-slate-600 rounded-lg px-4 py-2 hover:bg-slate-300">Add</button>
-                </div>
-                <ul id="product-list" class="list-disc text-gray-800"></ul>
-            </div>
+        <div class="transition-opacity duration-200">
+            <select id="supplierFilter"
+                class="w-full max-w-xs p-2 mb-4 border border-gray-200 rounded-lg text-sm bg-white focus:border-custom focus:ring-1 focus:ring-custom">
+                <option value="">All Suppliers</option>
+            </select>
+        </div>
+        <div id="itemList" class="space-y-3 pb-4 transition-opacity duration-200">
         </div>
     </div>
-    <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
-    <script src="js/app.js" defer></script>
+    <script src="https://cdn.tailwindcss.com/3.4.5?plugins=forms@0.5.7,typography@0.5.13,aspect-ratio@0.4.2,container-queries@0.1.1"></script>
+    <script src="app.js"></script>
 </body>
-
 </html>
