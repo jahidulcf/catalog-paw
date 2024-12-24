@@ -17,7 +17,8 @@
     <div class="px-4 py-4">
         <div class="flex items-center mb-4">
             <h1 class="w-full">Product Management</h1>
-            <button id="fetchProductsBtn" class="border px-4 py-2 rounded-lg flex items-center space-x-3 text-sm hover:border-gray-300 transition-colors">
+            <button id="fetchProductsBtn"
+                class="border px-4 py-2 rounded-lg flex items-center space-x-3 text-sm hover:border-gray-300 transition-colors">
                 <i id="fetchIcon" class="fas fa-cloud-download"></i>
                 <span>Sync</span>
         </div>
@@ -31,13 +32,13 @@
             <textarea id="product-input"
                 class="w-full h-32 p-3 border border-gray-200 rounded-lg text-sm focus:border-custom focus:ring-1 focus:ring-custom"
                 placeholder="Enter product (e.g. Apple 2 kg)"></textarea>
-                
-                <div class="absolute bottom-3 right-2 flex justify-end space-x-4">
-                    <button id="copy"
-                        class="bg-gray-200 text-gray-600 px-2 py-1 rounded-md text-sm hover:bg-gray-300">Copy</button>
-                    <button id="resize-button"
-                        class="bg-gray-200 text-gray-600 px-4 py-1 rounded-md text-sm hover:bg-gray-300">⇲</button>
-                </div>
+
+            <div class="absolute bottom-3 right-2 flex justify-end space-x-4">
+                <button id="copy"
+                    class="bg-gray-200 text-gray-600 px-2 py-1 rounded-md text-sm hover:bg-gray-300">Copy</button>
+                <button id="resize-button"
+                    class="bg-gray-200 text-gray-600 px-4 py-1 rounded-md text-sm hover:bg-gray-300">⇲</button>
+            </div>
             <div id="suggestions"
                 class="hidden absolute w-full bg-white border border-gray-200 rounded-lg mt-1 max-h-48 overflow-y-auto z-10">
             </div>
@@ -53,7 +54,9 @@
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
-    <script src="https://cdn.tailwindcss.com/3.4.5?plugins=forms@0.5.7,typography@0.5.13,aspect-ratio@0.4.2,container-queries@0.1.1"></script>
+    <script
+        src="https://cdn.tailwindcss.com/3.4.5?plugins=forms@0.5.7,typography@0.5.13,aspect-ratio@0.4.2,container-queries@0.1.1"></script>
     <script src="js/app.js"></script>
 </body>
+
 </html>
