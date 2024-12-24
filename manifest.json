@@ -5,7 +5,7 @@
     "scope": "/catalog-paw/",
     "display": "standalone",
     "background_color": "#ffffff",
-    "theme_color": "#000000",
+    "theme_color": "#ffffff",
     "icons": [
         {
             "src": "icons/price-tag-icon.svg",
