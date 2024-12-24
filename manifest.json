@@ -1,11 +1,11 @@
 {
     "name": "Order Catalogue App",
     "short_name": "Catalogue",
-    "start_url": "./index.html",
-    "scope": "./",
+    "start_url": "/catalog-paw/index.html",
+    "scope": "/catalog-paw/",
     "display": "standalone",
-    "background_color": "#fff",
-    "theme_color": "#000",
+    "background_color": "#ffffff",
+    "theme_color": "#000000",
     "icons": [
         {
             "src": "icons/price-tag-icon.svg",
