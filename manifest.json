@@ -8,12 +8,12 @@
     "theme_color": "#ffffff",
     "icons": [
         {
-            "src": "icons/price-tag-icon.svg",
+            "src": "icons/catalog-icon.svg",
             "sizes": "192x192",
             "type": "image/svg+xml"
         },
         {
-            "src": "icons/price-tag-icon.svg",
+            "src": "icons/catalog-icon.svg",
             "sizes": "512x512",
             "type": "image/svg+xml"
         }
