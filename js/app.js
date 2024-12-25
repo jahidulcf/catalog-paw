@@ -132,9 +132,14 @@ textarea.addEventListener('input', (e) => {
     }
 });
 
+textarea.addEventListener('focus', () => {
+    textarea.classList.add('sticky');
+});
+
 textarea.addEventListener('blur', () => {
     setTimeout(() => {
         hideSuggestions();
+        textarea.classList.remove('sticky');
     }, 200);
 });
 
