@@ -131,7 +131,6 @@ textarea.addEventListener('input', (e) => {
     } else {
         hideSuggestions();
     }
-    localStorage.setItem('textareaContent', text);
 });
 
 textarea.addEventListener('blur', () => {
