@@ -125,12 +125,13 @@ textarea.addEventListener('input', (e) => {
     const lastNewLine = text.lastIndexOf('\n', cursorPosition - 1);
     const currentLine = text.substring(lastNewLine + 1, cursorPosition);
     if (currentLine.trim().length > 0) {
-        supplierFilter.parentElement.className.add = 'hidden';
+        supplierFilter.parentElement.classList.add('hidden');
         itemList.classList.add('hidden');
         showSuggestions(currentLine);
     } else {
         hideSuggestions();
     }
+    localStorage.setItem('textareaContent', text);
 });
 
 textarea.addEventListener('blur', () => {
