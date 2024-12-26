@@ -131,7 +131,7 @@ textarea.addEventListener('input', (e) => {
         hideSuggestions();
     }
 });
-
+s
 textarea.addEventListener('focus', () => {
     textarea.classList.add('sticky');
 });
@@ -146,7 +146,7 @@ textarea.addEventListener('blur', () => {
 copyBtn.addEventListener('click', () => {
     const formattedDate = flatpickr.formatDate(new Date(dateInput.value), "j M, l");
     const boldDate = `*${formattedDate}*`;
-    const message = "I have an order to be delivered on " + boldDate + "\n" + textarea.value + "\n\nThank you!";
+    const message = "I have an order to be delivered on " + boldDate + "\n\n" + textarea.value + "\n\nThank you!";
     navigator.clipboard.writeText(message).then(() => {
         copyBtn.textContent = 'Copied!';
         setTimeout(() => {
