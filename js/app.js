@@ -132,7 +132,6 @@ textarea.addEventListener('input', (e) => {
     }
 });
 
-
 textarea.addEventListener('blur', () => {
     setTimeout(() => {
         hideSuggestions();
