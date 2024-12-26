@@ -13,6 +13,7 @@ const suggestions = document.getElementById('suggestions');
 const supplierFilter = document.getElementById('supplierFilter');
 const itemList = document.getElementById('itemList');
 
+
 const suppliers = [...new Set(products.map(p => p.supplier))];
 
 fetchProductsBtn.addEventListener('click', async () => {
