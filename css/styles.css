@@ -10,3 +10,9 @@ input[type="text"].flatpickr-input {
     -moz-appearance: none;     /* For Firefox on mobile */
     appearance: none;          /* For other browsers */
 }
+
+.sticky-textarea {
+    position: sticky;
+    top: 0;
+    z-index: 50; /* Ensure it stays above other elements */
+}
