@@ -101,6 +101,7 @@ function renderItems() {
         div.innerHTML = `<div class="flex justify-between items-center"><div><div class="font-medium text-sm">${product.name}</div><div class="text-xs text-gray-500 mt-1">${product.supplier}</div></div><div class="flex items-center space-x-3"><button class="decrease-btn text-custom hover:bg-custom/10 w-8 h-8 rounded-full flex items-center justify-center transition-colors" onclick="event.stopPropagation()"><i class="fas fa-minus text-xs"></i></button><div class="text-sm font-medium">${product.quantity} ${product.unit}</div><button class="increase-btn text-custom hover:bg-custom/10 w-8 h-8 rounded-full flex items-center justify-center transition-colors" onclick="event.stopPropagation()"><i class="fas fa-plus text-xs"></i></button></div></div>`;
         div.onclick = () => {
             textarea.value += `${product.name} ${product.quantity} ${product.unit}\n`;
+            textarea.focus();
         };
         const decreaseBtn = div.querySelector('.decrease-btn');
         const increaseBtn = div.querySelector('.increase-btn');
